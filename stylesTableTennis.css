@@ -1,0 +1,130 @@
+
+body{
+    
+    background-image: url('https://img.freepik.com/free-vector/people-playing-table-tennis_23-2148662482.jpg?w=1480&t=st=1708523307~exp=1708523907~hmac=a1ad16e53b6d223a235dea7067e2c0ddb65a95a29f3b04eeb489e4b630d039c7');
+    background-size: cover; /* This stretches the image to cover the entire background */
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    display: flex;
+    justify-content: center;
+}
+#mainDiv{
+    display: inline-block;
+    width: 50%;
+    text-shadow: 1px 1px 2px black;
+    border-style: solid;
+    border-radius: 3%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #60993d;
+}
+
+#imgLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* Distribute space between elements of #imgLine evenly */
+    align-items: center; /* Align items vertically */
+    width: 100%; /* Ensure the container takes up full width */
+    box-sizing: border-box;
+}
+.pointNum{
+  
+    text-align: center; /* Center text horizontally */
+    background-color: white;
+    color: black;
+    text-shadow: none;
+    font-size: 2.3em; /* Make text size four times larger */
+    font-weight: 750;
+    display: inline-block; /* Ensure inline block display */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 1px solid black;
+    border-radius: 5px;
+    width: calc(10% - 2px);
+    max-width: calc(10% - 2px);;
+    
+}
+#imageTbT{
+
+    flex: 1; /* Make the image flex to distribute remaining space */
+    max-width: calc(50% - 2px); /* Ensure the image does not exceed container width */
+    display: block; /* Make the image a block element */
+    border: 1px solid black;
+    width: calc(50% - 2px);
+    border-radius: 2%;
+}
+button{
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+}
+.players{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    width: 100px;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+#buttonP1{
+    background-color: #fcfcfc;
+    
+}
+#buttonP2{
+    background-color: #eb4746;
+}
+.buttonReset{
+    margin-top: 1.5em;
+    border-radius: 20px;
+    font-weight: 800;
+    background-color: #ffcc00;
+
+}
+select{
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+h2{
+    margin: 0;
+    display: inline-block;
+    border: 4px #ffcc00;
+    border-style: groove ridge  ridge groove;
+    border-radius: 15%;
+    padding: 0px 10px;
+}
+
+.winner{
+    color: green;
+    text-shadow: 1px 1px 2px black;
+}
+.loser{
+    color: red;
+    text-shadow: 1px 1px 2px black;
+}
+
+#outBoard{
+    border: 1px solid black;
+    border-radius: 15%;
+    display: inline-block;
+    margin: 2% 0px;
+}
+#hideAndSeek{
+    display: block;
+}
+.winWindow{
+    padding: 1.5em 1em;
+
+}
+.hideRButton{
+display: none;
+}
+.marResetButton{
+margin-bottom: 30px;
+}

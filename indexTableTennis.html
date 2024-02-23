@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Score</title>
+    <link rel="stylesheet" href="stylesTableTennis.css">
+
+
+</head>
+
+<body>
+    <div id="mainDiv">
+        <h1>Table Tennis Score</h1>
+
+        <div id="imgLine">
+            <span id="pointNumP1" class="pointNum">0</span>
+            <img src="https://media.istockphoto.com/id/502189498/photo/table-tennis-ball-and-bat.jpg?s=2048x2048&w=is&k=20&c=QtOsXq2kzV6ZuUrD23dfbjjpJ75E39kmzo-wEkGKDlo="
+                alt="Table Tennis Image" id='imageTbT'>
+            <span id="pointNumP2" class="pointNum">0</span>
+        </div>
+
+        <div id="outBoard">
+            <h2><span id="setNum1">0</span> to <span id="setNum2">0</span></h2>
+        </div>
+
+
+        <div id="hideAndSeek">
+            <div><label for="numberOfSets">Sets Best of:</label>
+                <select name="numberOfSets" id="numberOfSets">
+                    <option value="1">1</option>
+                    <option value="2">3</option>
+                    <option value="3">5</option>
+                    <option value="50">99</option>
+
+                </select>
+            </div>
+
+            <div><label for="numberOfGames">Choose how many points the set has:</label>
+                <select name="numberOfGames" id="numberOfGames">
+                    <option value="3">3</option>
+                    <option value="11">11</option>
+                    <option value="21">21</option>
+
+                </select>
+            </div>
+
+            <div id="buttons">
+                <button id="buttonP1" class="players">White Player Scores</button>
+                <button id="buttonP2" class="players">Red Player Scores</button>
+
+            </div>
+     </div>
+
+
+
+        <div id="resetButtons">
+            <button id="buttonResetGame" class='buttonReset'>Reset Game</button>
+            <button id="buttonReset" class='buttonReset'>Reset Set</button>
+        </div>
+
+    </div>
+
+
+    <audio id="yeahSound" src="https://cdn.pixabay.com/audio/2022/06/22/audio_8afbda9cac.mp3" preload="auto"></audio>
+    <script src="scriptTableTennis.js"></script>
+    
+</body>
+
+</html>
